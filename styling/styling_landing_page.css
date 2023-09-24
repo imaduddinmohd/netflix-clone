@@ -1,0 +1,981 @@
+*
+{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body
+{
+ background-color:black;
+ color:white;
+}
+
+.navigation_bar
+{
+  display:flex;
+  padding:7% 5%;
+  justify-content:space-between;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:10;
+}
+
+.navigation_bar .menu_signin
+{
+ display:flex;
+}
+
+.logo_holder
+{
+ width:100px;
+ height:100%;
+}
+
+.logo_holder img
+{
+ width:100%;
+ height:100%;
+}
+
+
+
+
+.menu_holder .select_option
+{
+ /*background: transparent;*/  /*Because I want to make th bg of select like an overlay*/
+ color: white;
+ font-size:14px;
+ border:0.1rem solid rgba(255,255,255,0.8);
+ padding:0.25rem 0.8rem;
+ border-radius:4px;
+ background:rgba(0,0,0,0.4);
+ 
+}
+
+
+.select_option:focus
+{
+  background:transparent;
+}
+
+
+.menu_holder select:focus
+{
+ outline:none;
+ 
+}
+
+.menu_holder 
+{
+ margin:0;
+}
+
+.signin button
+{
+ background:#dc030f;
+border:1px solid #dc030f;
+color:white;
+padding:0.2rem 0.5rem;
+border-radius:4px;
+font-size:15px;
+cursor:pointer;
+}
+
+.menu_signin
+{
+ gap:7px;
+}
+
+
+.hero_bg_image_container 
+{
+ width:100%;
+height:70vh;
+ overflow:hidden;
+
+}
+
+
+.hero_bg_image_container .hero_image
+{
+ width:100%;
+height:100%;
+ object-fit:cover;
+}
+
+
+.hero .overlay
+{
+ position:absolute;
+ height:70vh;         /*inset:0 0 20vh 0; Alternative solution   */
+ width:100%;
+ background:rgba(0,0,0,0.4);
+  background-image:linear-gradient(to top, rgba(0,0,0,0.8)0, rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%);
+ inset:0;
+}
+
+
+.hero_card
+{
+  color:white;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  position:absolute;
+  top:22%;
+     /*left:10%*/
+}
+
+.hero
+{
+ margin-bottom:0px;
+}
+
+
+.hero_card .hero_title
+{
+ font-weight:600;
+ font-size:2rem;
+}
+
+.hero_subtitle,.hero_description
+{
+ font-weight:400;
+ font-size:1rem; 
+ 
+ }
+
+.hero_description
+{
+ margin:0 50px;
+
+}
+ 
+
+
+.email_form_container
+{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ gap:10px;
+
+
+}
+
+
+.email_input
+{
+ border:none;
+ background:transparent;
+ width:100%;
+ height:100%;
+ padding-left:6px;
+}
+
+.form_container
+{
+ position:relative;
+ background:white;
+ width:90%;
+ height:40px;
+}
+
+.email_label 
+{
+ color:rgb(153,149,149);
+ position:absolute;
+top:28%;
+ left:2%;
+ z-index:20;
+ font-weight:100;
+  transition:0.5s;
+}
+
+
+.email_input:focus + .email_label
+{
+ top:0.2rem;
+ font-size:11px;
+
+}
+
+
+.email_input:not(:placeholder-shown).email_input:not(:focus) + .email_label
+{
+ top:0.2rem;
+ font-size:11px;
+
+}
+
+.email_input:focus
+{
+ outline:none;
+
+}
+
+ 
+.primary_button
+{
+
+background:#dc030f;
+border:1px solid #dc030f;
+color:white;
+padding:0.5rem 0.5rem;
+border-radius:3px;
+font-size:15px;
+letter-spacing:1px;
+ cursor:pointer;
+}
+
+
+
+.feature
+{
+ border-top:6px solid #222;
+ padding:2rem 1rem;
+
+}
+
+
+
+.feature_details
+{
+ text-align:center;
+}
+
+.feature_details_insider
+{
+
+}
+
+
+
+
+.feature_title
+{
+ font-weight:600;
+ font-size:25px;
+ margin:10px;
+
+}
+
+.feature_subtitle
+{
+ font-weight:400;
+ font-size:15px;
+ width:100%;
+ line-spacing:2px;
+}
+
+
+.feature_image_container
+{
+ width:100%;
+ position:relative;
+
+}
+
+.feature_image
+{
+ width:100%;
+ 
+}
+
+.feature_background_video_container
+{
+ /*width:75%;
+ height:54%;
+ max-width:73%;
+ max-height:60%;
+ position:absolute;
+ top:20%;
+ left:13%;
+z-index:-3;
+overflow:hidden;*/
+
+ position:absolute;
+ top:21%;
+ width:73%;
+ height:54%;
+ left:13%;
+ z-index:-3;
+ 
+}
+
+.feature_background_video
+{
+ width:100%;
+ 
+
+}
+
+.feature_2_container
+{
+ 
+ height:60px;
+ position:absolute;
+ top:70%;
+ left:12%;
+ 
+}
+
+.stranger_things_div_details
+{
+ display:flex;
+ border:2px solid rgba(255,255,255,.25);
+ border-radius:10px;
+ width:100%;
+ height:100%;
+ gap:15px;
+ justify-content:space-around;
+ align-items:center;
+ padding:3px 5px;
+ background:black;
+ 
+}
+
+.stranger_things_div_details img
+{
+ height:100%;
+ width:100%;
+
+}
+
+.image_container
+{
+ width:15%;
+ height:100%;
+}
+
+.text
+{
+ text-align:left;
+
+}
+
+
+.text h5
+{
+ font-weight:700;
+ font-size:16px;
+ letter-spacing:1px;
+ 
+}
+
+.text p
+{
+ font-weight:200;
+ font-size:13px;
+ color:#0071eb;
+}
+
+
+.gif_container
+{
+ width:13%;
+ height:80%;
+ 
+}
+
+.gif
+{
+ height:100%;
+ width:100%;
+}
+
+
+
+
+
+
+.faq_title
+{
+ padding:18px;
+ text-align:center;
+ margin:0 20px;
+ letter-spacing:3px;
+}
+
+
+
+
+.accordian
+{
+ width:100%;
+ display:flex;
+ flex-direction:column;
+ margin-bottom:5px;
+ justify-content:space-between;
+ background:#303030; 
+ 
+ 
+}
+
+
+.accordian .question
+{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin:10px 10px;
+}
+
+
+.paragraph_container
+{
+ border-top:2px solid black;
+ max-height:0px;
+ overflow:hidden;
+ transition:.5s;
+}
+
+
+
+
+
+.FAQ_container
+{
+   border-top:6px solid #222;
+  
+   padding-top:2rem ;
+
+}
+
+
+.accordian h2
+{
+font-weight:400;
+ font-size:20px;
+ cursor:pointer;
+}
+
+.accordian_container p
+{
+ background:#303030;  
+ padding:15px;
+ transition:.4s;
+ 
+}
+
+.second_email
+{
+ margin:1.5rem 0px;
+}
+
+
+.footer_container
+{
+ display:flex;
+ flex-direction:column;
+ padding:1.5rem;
+ gap:1rem;
+ border-top:6px solid #222;
+
+}
+
+
+.footer_top
+{
+ color:#333;
+ font-size:18px;
+}
+
+
+ .footer_middle
+{
+ display:flex;
+ flex-direction:row;
+ flex-wrap:wrap;
+ font-weight:400;
+
+}
+
+
+.footer_middle p
+{
+ padding:8px;
+ font-size:15px;
+ color:#333;
+ font-weight:300;
+}
+
+
+.footer_middle_details
+{
+ width:50%;
+ 
+}
+
+
+.footer_bottom .menu_holder .select_option
+{
+ color:#333;
+ border:1px solid #333;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:760px)
+{
+
+
+
+.select_option
+{
+  height:auto;
+}
+
+
+
+
+
+
+.signin button
+{
+ padding:.25rem 1rem;
+
+}
+
+
+
+ .logo_holder
+{
+ margin-left:20px;
+ width:120px;
+ height:100%;
+}
+
+
+.navigation_bar
+{
+ padding:4% 3%;
+
+}
+
+
+ 
+
+.menu_signin
+{
+ gap:20px;
+ margin-right:17px;
+}
+
+
+
+
+
+.hero_bg_image_container 
+{
+ height:75vh;
+
+}
+
+
+.hero .overlay
+{
+ height:75vh;
+}
+
+
+
+
+
+.hero .hero_card
+{
+  top:25%;
+  left:30%;
+  transform:translate(-20%,-20%);  
+ 
+}
+
+.hero_card .hero_title
+{
+ font-weight:900;
+ font-size:3.2rem;
+ text-style:oblique;
+}
+
+
+.hero_subtitle,.hero_description
+{
+ font-weight:400;
+ font-size:1.2rem; 
+ }
+
+
+.form_container
+{
+ height:50px;
+}
+
+.email_form_container .primary_button
+{
+ height:50px;
+
+}
+
+
+
+
+
+ .email_input
+{
+ padding-left:9px;
+
+}
+
+
+
+
+
+
+.feature
+{
+  padding:4rem;
+}
+
+
+.feature_title
+{
+ font-size:35px;
+
+}
+
+.feature_subtitle
+{
+ font-size:20px;
+
+}
+
+
+
+.feature_2_container
+{
+ width:60%;
+ height:80px;
+ top:78%;
+ left:20%;
+}
+
+
+.stranger_things_div_details
+{
+ gap:10px;
+ justify-content:space-between;
+ padding:5px 10px;
+}
+
+
+.FAQ_container
+{
+ padding: 1rem 8rem;
+
+}
+
+
+.second_email
+{
+ padding:0 9rem;
+}
+
+
+
+.second_email .form_container
+{
+
+}
+
+.second_email .primary_button
+{
+ padding:.75rem 1.5rem;
+}
+
+.footer_middle_details
+{
+ width:25%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px)
+{
+
+
+ .navigation_bar
+{
+ padding: 2% 5%;
+} 
+
+.logo_holder 
+{
+ width:170px;
+}
+
+.signin button
+{
+ padding:10px 18px;
+ font-size:17px;
+ 
+}
+
+.menu_holder
+{
+ padding:0px;
+  text-align:center;
+
+}
+
+.menu_holder .select_option
+{
+ padding:12px 18px;
+
+}
+
+
+.menu_holder .select_option option
+{
+ font-size:10px;
+}
+
+
+.menu_signin
+{
+ gap:20px;
+ padding:0px;
+}
+
+.hero .hero_card
+{
+  
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);  
+
+}
+
+
+.email_form_container
+{
+ flex-direction:row;
+
+}
+
+.primary_button
+{
+ height:40px;
+}
+
+.form_container
+{
+ width:60%;
+
+}
+
+.email_form_container
+{
+ gap:2px;
+}
+
+
+
+.hero
+{
+ height:100vh;
+
+}
+
+
+.hero_bg_image_container
+{
+ height:100vh;
+
+}
+
+.hero .overlay
+{
+ height:100vh;
+}
+
+
+
+
+
+.feature_details
+{
+ display:flex;
+ flex-direction:row;
+ align-items:center;
+ padding:0 3rem;
+ justify-content:space-between;
+ text-align:left;
+ gap:40px;
+}
+
+
+
+.feature_title
+{
+ font-size:50px;
+ 
+}
+
+.feature_subtitle
+{
+ font-size:25px;
+
+}
+
+
+
+.feature_image_container
+{
+  max-width:500px;
+
+}
+
+
+
+.feature_2_container
+{
+ width:65%;
+ height:100px;
+ top:73%;
+ left:17%;
+ padding:10px;
+}
+
+
+.FAQ_container
+{
+ padding:0 17rem;
+ 
+}
+
+
+.faq_title
+{
+ font-size:35px;
+  letter-spacing:3px;
+ font-weight:550;
+}
+
+.question h2
+{ 
+  font-size:25px;
+}
+
+
+#paragraph
+{
+  font-size:20px;
+  font-weight:200;
+}
+
+
+
+.footer_bottom .menu_holder
+{
+ 
+ text-align:left;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1250px)
+{
+
+}
+
+
+
+
+
+
+
